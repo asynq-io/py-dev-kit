@@ -5,6 +5,7 @@ description: Use when writing or modifying Python code — implementing features
 
 # Code style
 - **ALWAYS adhere to PEP8.**
+- **Follow SOLID principles**
 - **Mimic the code structure and patterns used in the project** — study neighbouring
   modules before writing and match their conventions.
 - **Add the most precise typing annotations possible** — avoid `Any`; prefer concrete
