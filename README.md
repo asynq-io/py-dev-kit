@@ -1,6 +1,11 @@
 # py-dev-kit
 Modern Python development plugin for Claude Code.
 
+## Commands
+- `/py-dev-kit:setup` — initialize the project with the default `CLAUDE.md` and
+  `.claude/settings.json` from [`templates/`](templates/) (safe to run on existing
+  projects: merges, never overwrites)
+
 ## Skills
 - `code-style` — PEP8, precise typing, self-documenting code
 - `pytest` — function-only tests, anyio, fixtures, parametrization, branch coverage

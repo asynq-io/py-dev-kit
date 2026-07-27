@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run pytest:*)",
+      "Bash(uv run mypy:*)",
+      "Bash(uv run ruff:*)",
+      "Bash(pre-commit run --all-files)",
+      "mcp__context7",
+      "mcp__serena"
+    ],
+    "deny": ["Edit(uv.lock)", "Write(uv.lock)"]
+  }
+}
