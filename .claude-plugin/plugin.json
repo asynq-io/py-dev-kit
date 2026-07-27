@@ -1,0 +1,23 @@
+{
+  "name": "py-dev-kit",
+  "description": "All-in-one plugin for modern Python development",
+  "version": "0.1.0",
+  "author": {
+    "name": "RaRhAeu",
+    "email": "rarha_eu@protonmail.com",
+    "url": "https://github.com/RaRhAeu"
+  },
+  "license": "MIT",
+  "keywords": ["python", "anyio", "pytest", "rest-api"],
+  "mcpServers": "./.mcp.json",
+  "lspServers": {
+    "pyright": {
+      "command": "pyright-langserver",
+      "args": ["--stdio"],
+      "extensionToLanguage": {
+        ".py": "python",
+        ".pyi": "python"
+      }
+    }
+  }
+}

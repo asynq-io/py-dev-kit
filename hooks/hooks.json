@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f .pre-commit-config.yaml ]; then pre-commit run --all-files >&2 || exit 2; fi",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
