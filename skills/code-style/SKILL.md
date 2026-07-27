@@ -14,4 +14,4 @@ description: Use when writing or modifying Python code — implementing features
   structured concurrency — follow the `anyio` skill.
 - **Prefer self-documenting code over comments** — clear names and small functions
   instead of explanatory comments.
-- **Public classes and methods/functions should have short, meaningful docstrings.**
+- **Public classes and methods/functions should have short, meaningful docstrings.** - add by default for newly created objects, do not add to existing code unless explicitly asked by user
