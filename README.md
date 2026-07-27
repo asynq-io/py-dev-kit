@@ -1,6 +1,17 @@
 # py-dev-kit
 Modern Python development plugin for Claude Code.
 
+## Installation
+
+In Claude Code:
+
+```
+/plugin marketplace add asynq-io/py-dev-kit
+/plugin install py-dev-kit@asynq-io
+```
+
+Then initialize your project with `/py-dev-kit:setup`.
+
 ## Commands
 - `/py-dev-kit:setup` — initialize the project with the default `CLAUDE.md` and
   `.claude/settings.json` from [`templates/`](templates/) (safe to run on existing

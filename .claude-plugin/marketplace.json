@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "asynq-io",
+  "description": "asynq-io plugins for Claude Code",
+  "owner": {
+    "name": "RaRhAeu",
+    "email": "rarha_eu@protonmail.com"
+  },
+  "plugins": [
+    {
+      "name": "py-dev-kit",
+      "description": "All-in-one plugin for modern Python development",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}
