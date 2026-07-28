@@ -1,6 +1,6 @@
 ---
 name: api-design
-description: Use when designing or reviewing RESTful APIs — defining endpoints, resources, URLs, JSON payloads, status codes, pagination, or OpenAPI specs. Enforces company REST guidelines (based on Zalando): resource-oriented URLs, snake_case JSON, problem JSON errors, cursor pagination, compatible evolution.
+description: Use when designing or reviewing RESTful APIs — defining endpoints, resources, URLs, JSON payloads, status codes, pagination, or OpenAPI specs. Enforces company REST guidelines: resource-oriented URLs, snake_case JSON, problem JSON errors, pagination, compatible evolution.
 ---
 
 # Designing RESTful APIs
@@ -8,6 +8,9 @@ description: Use when designing or reviewing RESTful APIs — defining endpoints
 Decoupled microservices expose functionality via RESTful APIs with JSON payloads.
 Requirement keywords (MUST, SHOULD, MAY) follow RFC 2119. New APIs MUST respect these
 guidelines; existing APIs don't have to be changed (but it's recommended).
+
+Full reference: [Zalando RESTful API Guidelines](https://opensource.zalando.com/restful-api-guidelines/)
+— fetch it (WebFetch) when a topic needs more detail than the rules below.
 
 ## Meta
 
