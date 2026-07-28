@@ -16,6 +16,10 @@ Then initialize your project with `/py-dev-kit:setup`.
 - `/py-dev-kit:setup` — initialize the project with the default `CLAUDE.md` and
   `.claude/settings.json` from [`templates/`](templates/) (safe to run on existing
   projects: merges, never overwrites)
+- `/py-dev-kit:implement <feature description>` — full feature workflow: plan
+  (waits for approval), implement, review, test, fix until green
+- `/py-dev-kit:review` — full code review of current changes via the
+  `code-reviewer` agent, with parallel fix sub-agents and a final verification run
 
 ## Skills
 - `code-style` — PEP8, precise typing, self-documenting code
