@@ -1,16 +1,19 @@
 ## Project
-- All dependencies and settings are specified in `pyproject.toml` file. Read it first
-- `uv` is used for managing virtualenv and dependencies, always run commands with `uv run` prefix (mypy, ruff, pytest), except for the `pre-commit`.
+- All dependencies and settings are specified in `pyproject.toml` file.
+- If `uv` is used in project always run python related commands with `uv run` prefix, e.g:
+`uv run pytest`, `uv run python -C ...`, `uv run ruff`
 
 ## Commands
-- `source .venv/bin/activate` - activate virtualenv
-- `pre-commit run --all` - running pre-commit
+- `pre-commit run --all` - running pre-commit run after finishing applying changes
 
 ## Workflow
-- Prefer small, atomic changes
-- After completing each step, run tests and pre-commit
-- Fix errors from pytest/pre-commit. Try to actually fix the issue instead of adding exclusion rule or ignoring directive (# noqa, # type: ignore etc.). Sometimes it's ok to add ignore rules for `/tests` directories
-- After finishing task, do a full code review on created changes, note all issues and comments, try to fix them, verify they pass pre-commit and tests
+- Prefer small, atomic changes when possible
+- Run `pre-commit` and tests
+- Fix errors errors
+
+## Tooling
+- Use `serena_mcp` tools for code navigation and symbol lookup instead of grep
+- Use `context7` for library documentation lookup
 
 ## Code style
 - ALWAYS use `code-style` skill when writing python code
@@ -24,3 +27,4 @@
 - Introduce frameworks/dependencies without request
 - Add TODOs instead of implementing requested features
 - Assume business logic
+- Over-engineer the solution
