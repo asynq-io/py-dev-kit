@@ -35,9 +35,14 @@ Then initialize your project with `/py-dev-kit:setup`.
 ## Hooks
 - `PostToolUse` — runs `pre-commit` after every file edit
 
-## MCP servers
-- `context7` — up-to-date library documentation
-- `serena` — semantic code navigation and editing
 
-## LSP servers
-- `pyright` — Python language server
+## Other tools (outside of plugin)
+
+Test and verify on your own
+
+- Python LSP
+- [rtk](https://github.com/rtk-ai/rtk)
+- [serena](https://github.com/oraios/serena)
+- [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)
+- [context7](https://context7.com/)
+- [context-mode](https://github.com/mksglu/context-mode)

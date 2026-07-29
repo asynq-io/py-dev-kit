@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: Reviews a diff/changeset against project standards (precise typing, no noqa/type-ignore escape hatches, anyio + structured concurrency, PEP8, docstrings on public API). Use after implementing a change, before committing.
+description: Use to review a diff or changeset against project standards, after implementing a change and before committing.
 tools: Read, Grep, Glob, Bash
 skills:
   - code-style

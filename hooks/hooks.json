@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "if [ -f .pre-commit-config.yaml ]; then pre-commit run --files $CLAUDE_FILE_PATHS | grep -vE 'Passed|Skipped' >&2 || exit 2; fi",
+            "command": "if [ -f .pre-commit-config.yaml ]; then pre-commit run --files $CLAUDE_FILE_PATHS | grep -vE 'Passed|Skipped|passed|note|\\.' >&2 || exit 2; fi",
             "timeout": 30
           }
         ]

@@ -9,16 +9,5 @@
   },
   "license": "MIT",
   "keywords": ["python", "anyio", "pytest", "rest-api"],
-  "repository": "https://github.com/asynq-io/py-dev-kit",
-  "mcpServers": "./.mcp.json",
-  "lspServers": {
-    "pyright": {
-      "command": "pyright-langserver",
-      "args": ["--stdio"],
-      "extensionToLanguage": {
-        ".py": "python",
-        ".pyi": "python"
-      }
-    }
-  }
+  "repository": "https://github.com/asynq-io/py-dev-kit"
 }

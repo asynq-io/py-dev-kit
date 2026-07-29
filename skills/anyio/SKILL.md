@@ -1,10 +1,6 @@
 ---
 name: anyio
-description: >-
-  Use when writing, reviewing, or debugging async Python that imports `anyio` —
-  task groups, cancel scopes, timeouts, memory object streams, sockets, async
-  files, threads/processes, or the pytest plugin. Enforces structured
-  concurrency and covers the cancellation gotchas that differ from raw asyncio.
+description: Use when writing, reviewing, or debugging async Python with `anyio` — task groups, cancel scopes, timeouts, streams, sockets, async files, threads.
 ---
 
 # Working with AnyIO

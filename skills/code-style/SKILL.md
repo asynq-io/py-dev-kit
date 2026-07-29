@@ -1,17 +1,13 @@
 ---
 name: code-style
-description: Use when writing or modifying Python code — implementing features, refactoring, or reviewing style. Enforces project code style: PEP8, precise typing, anyio over asyncio, structured concurrency, self-documenting code.
+description: Always use when writing, refactoring, or reviewing Python code.
 ---
 
 # Code style
-- **ALWAYS adhere to PEP8.**
-- **Follow SOLID principles**
-- **Mimic the code structure and patterns used in the project** — study neighbouring
-  modules before writing and match their conventions.
-- **Add the most precise typing annotations possible** — avoid `Any`; prefer concrete
-  types, generics, `TypedDict`/`Protocol`, and narrow unions.
-- **Use async/await when feasible; always `anyio` over raw `asyncio`**, with
-  structured concurrency — follow the `anyio` skill.
-- **Prefer self-documenting code over comments** — clear names and small functions
-  instead of explanatory comments.
-- **Public classes and methods/functions should have short, meaningful docstrings.** - add by default for newly created objects, do not add to existing code unless explicitly asked by user
+- **Always Follow PEP8**
+- Follow SOLID principles.
+- Match neighbouring modules' structure, patterns, and conventions — read them first.
+- Type as precisely as possible: no `Any`; prefer concrete types, generics, `TypedDict`/`Protocol`, narrow unions.
+- For concurrency related/async code use `anyio` skill.
+- Self-documenting code over comments: clear names, small functions.
+- Short docstrings on new public classes and functions; don't add them to existing code unless asked.

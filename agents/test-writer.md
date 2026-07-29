@@ -1,6 +1,6 @@
 ---
 name: test-writer
-description: Writes pytest tests for a module or feature as a standalone delegated task (e.g. "add coverage for module X"). Follows the pytest skill conventions.
+description: Use to write pytest tests for a module or feature as a delegated task, e.g. "add coverage for module X".
 tools: Read, Edit, Write, Grep, Glob, Bash
 skills:
   - pytest

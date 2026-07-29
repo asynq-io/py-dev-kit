@@ -1,6 +1,6 @@
 ---
 name: fastapi-best-practices
-description: Portable FastAPI patterns and anti-patterns - async vs sync routes, Pydantic v2 usage, dependency injection, testing, and project structure. Use whenever writing, reviewing, or refactoring FastAPI code: designing routers/endpoints, choosing async vs sync routes, defining Pydantic schemas or settings, wiring up Depends()/dependency injection, or writing pytest/httpx tests. Also use when reviewing a diff or PR in a FastAPI codebase for common mistakes (blocking calls in async routes, deprecated Pydantic v1 patterns, legacy Depends() style, etc). Does not prescribe a specific auth library, ORM, or task queue - those are project decisions.
+description: Use when developing or reviewing a FastAPI app — routers, endpoints, Pydantic schemas and settings, Depends() injection, httpx tests, project structure.
 ---
 
 ## Project structure

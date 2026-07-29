@@ -1,6 +1,6 @@
 ---
 name: api-design
-description: Use when designing or reviewing RESTful APIs — defining endpoints, resources, URLs, JSON payloads, status codes, pagination, or OpenAPI specs. Enforces company REST guidelines: resource-oriented URLs, snake_case JSON, problem JSON errors, pagination, compatible evolution.
+description: Use when designing or reviewing a REST API — endpoints, URLs, JSON payloads, status codes, errors, pagination, OpenAPI specs.
 ---
 
 # Designing RESTful APIs

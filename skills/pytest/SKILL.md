@@ -1,6 +1,6 @@
 ---
 name: pytest
-description: Use when writing or extending pytest tests for a Python project — adding coverage for a module or feature, testing a just-implemented change, or fixing failing tests. Enforces project conventions: function-only tests, anyio for async, fixtures, parametrization, high branch coverage.
+description: Use when writing, extending, or fixing tests with pytest.
 ---
 
 # Writing tests
