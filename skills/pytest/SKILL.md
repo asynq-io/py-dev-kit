@@ -14,13 +14,14 @@ Produce tests that match the project's existing style exactly — study neighbou
 - **Async tests** use the `@pytest.mark.anyio` decorator. Never call `asyncio` directly; the
   project standardises on `anyio`.
 - **Fixtures** via `@pytest.fixture`. Put shared fixtures in `tests/conftest.py`; reuse the
-  existing ones rather than re-creating them.
+  existing ones rather than re-creating them. Never add unused fixtures arguments. Use `@pytest.mark.usefixtures` instead
 - **Parametrization** via `@pytest.mark.parametrize` for input/branch variations.
 - **Lint/typing in tests**: check pyproject's per-file-ignores for `tests/*` — projects
   typically relax rules there (bare asserts, missing annotations). Match what the existing
   test files do; don't add stricter or looser style than the neighbours.
 - Reuse the project's established test harness (e.g. app/client fixtures, factories, test
   doubles) instead of inventing new infrastructure.
+- Never add `# noqa` / `# type: ignore` to make a test pass — fix the test instead.
 
 ## What good coverage means
 
@@ -33,7 +34,5 @@ Produce tests that match the project's existing style exactly — study neighbou
 
 1. Read the module under test and 2-3 sibling test files to match structure and imports.
 2. Write focused tests; parametrize variations instead of duplicating bodies.
-3. Run the relevant subset: `./run_tests.sh` if present, otherwise
-   `uv run pytest tests/test_<name>.py -v`.
-4. Report uncovered branches you deliberately left out and why. Never add `# noqa` /
-   `# type: ignore` to make a test pass — fix the test instead.
+3. Run the relevant subset of tests.
+4. Report uncovered branches you deliberately left out and why.
